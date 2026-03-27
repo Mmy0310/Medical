@@ -1,0 +1,2 @@
+# Medical
+使用transforms和全连接神经网络对医学案例进行学习推理
