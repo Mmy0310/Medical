@@ -1,0 +1,41 @@
+DEPLOYMENT INFORMATION TEMPLATE (READY TO SUBMIT)
+
+1) Online deployment URL (if available):
+<PASTE_URL_HERE>
+
+2) Reproducible run note (when no public URL)
+- Environment: Python 3.10+
+- Install deps: pip install -r examples/tabular/competition_submit_package/05_deploy_info/requirements-deploy.txt
+- Windows one-click run:
+	powershell -ExecutionPolicy Bypass -File examples/tabular/competition_submit_package/05_deploy_info/run_windows.ps1
+- Linux one-click run:
+	chmod +x examples/tabular/competition_submit_package/05_deploy_info/run_linux.sh
+	./examples/tabular/competition_submit_package/05_deploy_info/run_linux.sh
+- Main script:
+	examples/tabular/project_multidisease_rigorous/run_selected_sheets_mlp_transformer.py
+- Batch script:
+	examples/tabular/project_multidisease_rigorous/run_batch_excels.py
+
+3) Access account (if required):
+<ACCOUNT_OR_NOT_REQUIRED>
+
+4) Access password or token (if required):
+<PASSWORD_OR_NOT_REQUIRED>
+
+5) Git upload scope (recommended)
+- Required:
+	examples/tabular/competition_submit_package/02_code_folder
+	examples/tabular/competition_submit_package/05_deploy_info
+- Optional:
+	examples/tabular/competition_submit_package/03_docs_folder
+	examples/tabular/competition_submit_package/04_demo_folder
+
+6) Safe git commit commands (whitelist)
+git add examples/tabular/competition_submit_package/02_code_folder
+git add examples/tabular/competition_submit_package/05_deploy_info
+git add examples/tabular/competition_submit_package/03_docs_folder
+git add examples/tabular/competition_submit_package/04_demo_folder
+git commit -m "add deploy-ready package and scripts"
+
+7) Additional notes:
+<ANY_OTHER_NOTES>
